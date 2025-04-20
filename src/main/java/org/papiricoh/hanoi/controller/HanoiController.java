@@ -5,13 +5,17 @@ import javafx.animation.Timeline;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.util.Duration;
+import org.papiricoh.core.dao.MoveDao;
 import org.papiricoh.hanoi.model.HanoiModel;
+
+import java.sql.SQLException;
 
 public class HanoiController {
 
     private final HanoiModel model;
     private final IntegerProperty step = new SimpleIntegerProperty(0);
     private Timeline autoPlay;
+    private final MoveDao dao = new MoveDao();
 
     public HanoiController(HanoiModel model) {
         this.model = model;
@@ -21,7 +25,15 @@ public class HanoiController {
     public int getStep()                  { return step.get(); }
 
     public void next() {
-        if (step.get() < model.getMoves().size()) step.set(step.get() + 1);
+        if (step.get() < model.getMoves().size()) {
+            var move = model.getMoves().get(step.get());
+            step.set(step.get() + 1);
+            try {
+                dao.addMove(3, step.get(),
+                        "Move " + step.get() + ": " + move.fromPeg() + "→" + move.toPeg(),
+                        null);                               // o JSON con más datos
+            } catch (SQLException ex) { ex.printStackTrace(); }
+        }
     }
 
     public void previous() {

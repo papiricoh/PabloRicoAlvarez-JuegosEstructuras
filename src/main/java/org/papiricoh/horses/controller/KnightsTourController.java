@@ -1,7 +1,9 @@
 package org.papiricoh.horses.controller;
 
+import org.papiricoh.core.dao.MoveDao;
 import org.papiricoh.horses.model.KnightsTourModel;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class KnightsTourController {
@@ -14,6 +16,7 @@ public class KnightsTourController {
     private int index = 0;
     private Listener listener;
     private final int size;
+    private final MoveDao dao = new MoveDao();
 
     public KnightsTourController(KnightsTourModel model) {
         this.path = model.getPath();
@@ -27,7 +30,15 @@ public class KnightsTourController {
 
     public void next() {
         if (index < path.size() - 1) {
+            int oldPos = path.get(index);
+            int oldRow = oldPos / size;
+            int oldCol = oldPos % size;
             index++;
+            try {
+                dao.addMove(2, path.get(index),
+                        "Move " + path.get(index) + ": " + oldRow + "/" + oldCol + "→" + path.get(index) / size + "/" + path.get(index) % size,
+                        null);
+            } catch (SQLException ex) { ex.printStackTrace(); }
             notifyListener();
         }
     }

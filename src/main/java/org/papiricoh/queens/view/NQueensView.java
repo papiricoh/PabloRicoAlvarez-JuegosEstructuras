@@ -13,8 +13,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import org.papiricoh.core.dao.MoveDao;
 import org.papiricoh.queens.controller.NQueensController;
 import org.papiricoh.queens.model.NQueensModel;
+
+import java.sql.SQLException;
 
 public class NQueensView extends BorderPane implements NQueensController.Listener {
 
@@ -22,6 +25,7 @@ public class NQueensView extends BorderPane implements NQueensController.Listene
     private final GridPane board = new GridPane();
     private final Label lblCounter = new Label();
     private final NQueensController controller;
+    private final MoveDao dao = new MoveDao();
 
     private NQueensView(int size) {
         NQueensModel model = new NQueensModel(size);
@@ -84,9 +88,14 @@ public class NQueensView extends BorderPane implements NQueensController.Listene
             // get cell at (col,row)
             for (var node : board.getChildren()) {
                 if (GridPane.getRowIndex(node) == row && GridPane.getColumnIndex(node) == col) {
-                    Text queen = new Text("\u265B"); // unicode black queen
+                    Text queen = new Text("\u265B");
                     queen.setFont(Font.font(tileSize * 0.8));
                     ((StackPane) node).getChildren().add(queen);
+                    try {
+                        dao.addMove(1, node.hashCode(),
+                                "Move queen: " + node.hashCode() + ": " +  GridPane.getRowIndex(node) / size + "/" + GridPane.getColumnIndex(node),
+                                null);
+                    } catch (SQLException ex) { ex.printStackTrace(); }
                     break;
                 }
             }
