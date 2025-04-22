@@ -1,9 +1,11 @@
 package org.papiricoh.horses.model;
 
+import org.papiricoh.core.model.Piece;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class KnightsTourModel {
+public class KnightsTourModel extends Piece {
 
     private final int size;
     private final List<Integer> path = new ArrayList<>();

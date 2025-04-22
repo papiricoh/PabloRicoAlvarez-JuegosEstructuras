@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4176713b-6330-4463-be0e-68439bc3c6e1" name="Changes" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4176713b-6330-4463-be0e-68439bc3c6e1" name="Changes" comment="Removed Nqueens remove board child">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/core/model/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_log.db" beforeDir="false" afterPath="$PROJECT_DIR$/game_log.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/AppLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/hanoi/model/HanoiModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/hanoi/model/HanoiModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/horses/model/KnightsTourModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/horses/model/KnightsTourModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/model/NQueensModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/model/NQueensModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/view/NQueensView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/view/NQueensView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745089656577</updated>
-      <workItem from="1745308164711" duration="723000" />
+      <workItem from="1745308164711" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -122,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745100934591</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed Nqueens remove board child">
+      <option name="closed" value="true" />
+      <created>1745311218513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745311218513</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Removed Nqueens remove board child" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Nqueens remove board child" />
   </component>
 </project>

@@ -26,7 +26,7 @@ public class AppLauncher extends Application {
 
         root.getTabs().add(new Tab("N‑Reinas", NQueensView.create()));
         root.getTabs().add(new Tab("Recorrido del Caballo", KnightsTourView.create()));
-        root.getTabs().add(new Tab("Torres de Hanoi", HanoiView.create(5)));
+        root.getTabs().add(new Tab("Torres de Hanoi", HanoiView.create(6)));
 
         root.getTabs().add(new Tab("Histórico", LogView.create(1, 2, 3)));
 

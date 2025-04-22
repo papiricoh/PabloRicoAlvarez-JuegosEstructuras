@@ -40,10 +40,8 @@ public class NQueensView extends BorderPane implements NQueensController.Listene
      * Factory so AppLauncher can instantiate via NQueensView.create().
      */
     public static Parent create() {
-        return new NQueensView(8); // default to classic 8×8
+        return new NQueensView(8);
     }
-
-    // ------------------------------------------------ private helpers -------
 
     private void buildBoard(int size) {
         board.setAlignment(Pos.CENTER);
@@ -102,8 +100,6 @@ public class NQueensView extends BorderPane implements NQueensController.Listene
             }
         }
     }
-
-    // -------------------------------------------------- Entry point helper --
 
     /**
      * Utility main so you can run this class directly from the IDE.

@@ -1,11 +1,13 @@
 package org.papiricoh.hanoi.model;
 
+import org.papiricoh.core.model.Piece;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-public class HanoiModel {
+public class HanoiModel extends Piece {
 
     public record Move(int fromPeg, int toPeg) {}
 

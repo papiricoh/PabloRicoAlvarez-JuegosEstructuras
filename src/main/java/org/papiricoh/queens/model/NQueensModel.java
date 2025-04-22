@@ -1,10 +1,12 @@
 package org.papiricoh.queens.model;
 
+import org.papiricoh.core.model.Piece;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class NQueensModel {
+public class NQueensModel extends Piece {
 
     private final int size;
     private final List<int[]> solutions = new ArrayList<>();
