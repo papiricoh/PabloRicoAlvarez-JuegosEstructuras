@@ -1,5 +1,6 @@
 package org.papiricoh;
 
+import atlantafx.base.theme.PrimerDark;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
@@ -17,6 +18,7 @@ public class AppLauncher extends Application {
 
     @Override
     public void start(Stage stage) {
+        Application.setUserAgentStylesheet(new PrimerDark().getUserAgentStylesheet());
         try {
             Db.init();
         } catch (SQLException e) {
