@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4176713b-6330-4463-be0e-68439bc3c6e1" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/core/Db.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/core/dao/MoveDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/core/view/LogView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/AppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/AppLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/hanoi/controller/HanoiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/hanoi/controller/HanoiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/horses/controller/KnightsTourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/horses/controller/KnightsTourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_log.db" beforeDir="false" afterPath="$PROJECT_DIR$/game_log.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/view/NQueensView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/papiricoh/queens/view/NQueensView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +24,12 @@
     &quot;assignee&quot;: &quot;papiricoh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/papiricoh/PabloRicoAlvarez-JuegosEstructuras.git&quot;,
-    &quot;accountId&quot;: &quot;aa5b894a-b417-496a-8c27-866737428ba1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/papiricoh/PabloRicoAlvarez-JuegosEstructuras.git",
+    "accountId": "19f0723f-b218-45b6-b063-36d699a31cb1"
   }
-}</component>
+}]]></component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -49,17 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AppLauncher.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PabloRicoAlvarez-JuegosEstructuras [javafx:run].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PabloRicoAlvarez-JuegosEstructuras [mvn...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AppLauncher.executor": "Run",
+    "Maven.PabloRicoAlvarez-JuegosEstructuras [javafx:run].executor": "Run",
+    "Maven.PabloRicoAlvarez-JuegosEstructuras [mvn...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PabloRicoAlvarez-JuegosEstructuras [javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -92,6 +96,14 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,6 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745089656577</updated>
+      <workItem from="1745308164711" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -111,6 +124,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />

@@ -81,7 +81,8 @@ public class NQueensView extends BorderPane implements NQueensController.Listene
 
     private void paintQueens(int[] queens) {
         // remove previous queens (keep just the squares)
-        board.getChildren().removeIf(node -> GridPane.getRowIndex(node) != null && ((StackPane) node).getChildren().size() > 1);
+        //board.getChildren().removeIf(node -> GridPane.getRowIndex(node) != null && ((StackPane) node).getChildren().size() > 1);
+
         int size = queens.length;
         for (int row = 0; row < size; row++) {
             int col = queens[row];
