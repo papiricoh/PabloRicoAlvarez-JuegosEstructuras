@@ -34,8 +34,6 @@ public class NQueensModel extends Piece {
         return List.copyOf(solutions);
     }
 
-    // -------- backtracking --------------------------------------------------
-
     private void backtrack(int[] queenInRow, int row,
                            boolean[] colUsed, boolean[] diag1Used, boolean[] diag2Used) {
         if (row == size) {

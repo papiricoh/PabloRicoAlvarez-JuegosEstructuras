@@ -23,8 +23,6 @@ public class KnightsTourModel extends Piece {
     public int getSize() { return size; }
     public List<Integer> getPath() { return List.copyOf(path); }
 
-    // ------------------ Heuristic backtracking -----------------------------
-
     private void solve() {
         int[][] board = new int[size][size];
         for (int r = 0; r < size; r++) {
